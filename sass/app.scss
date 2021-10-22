@@ -1,19 +1,5 @@
-/* Core */
-@import "core/reset.scss";
-@import "core/typography.scss";
-
-/* Abstracts */
-@import "abstracts/mixins.scss";
-@import "abstracts/variables.scss";
-
-/* Layout */
-@import "layout/header.scss";
-@import "layout/navigation.scss";
-@import "layout/footer.scss";
-
-/* Components */
-@import "components/buttons.scss";
-
-/* Pages */
-@import "pages/home.scss";
-@import "pages/restaurant.scss";
+@use "core/_reset.scss";
+@use "core/_typography.scss";
+@use "pages";
+@use "layout";
+@use "components";

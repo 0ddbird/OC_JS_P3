@@ -1,0 +1,10 @@
+@use "../abstracts" as a;
+
+button {
+    padding: 1em;
+    background: linear-gradient(a.$clr-secondary, a.$clr-primary);
+    border: none;
+    border-radius: 2em;
+    color: white;
+    font-weight: a.$fw-bold;
+}

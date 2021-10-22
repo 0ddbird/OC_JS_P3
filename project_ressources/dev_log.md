@@ -7,39 +7,45 @@
 
 ## Day #1
 
-https://www.webdesignerdepot.com/2020/12/2-smartest-ways-to-structure-sass/
+[Sass folder structure](https://www.webdesignerdepot.com/2020/12/2-smartest-ways-to-structure-sass/)
 
     sass/
-    |
-    |- abstracts/
-    |  |- _mixins             // Sass Mixins Folder
-    |  |- _variables.scss     // Sass Variables
-    |
-    |- core/
-    |  |- _reset.scss         // Reset
-    |  |- _typography.scss    // Typography Rules
-    |
-    |- components/
-    |  |- _buttons.scss       // Buttons
-    |  |- _carousel.scss      // Carousel
-    |  |- _slider.scss        // Slider
-    |
-    |- layout/
-    |  |- _navigation.scss    // Navigation
-    |  |- _header.scss        // Header
-    |  |- _footer.scss        // Footer
-    |  |- _sidebar.scss       // Sidebar
-    |  |- _grid.scss          // Grid
-    |
-    |- pages/
-    |  |- _home.scss          // Home styles
-    |  |- _about.scss         // About styles
-    |
-    |- sections/ (or blocks/)
-    |  |- _hero.scss          // Hero section
-    |  |- _cta.scss           // CTA section
-    |
-    |- vendors/ (if needed)
-    |  |- _bootstrap.scss     // Bootstrap
-    |
-    - app.scss                // Main Sass file
+    
+    - abstracts/
+        functions.scss     // Sass Functions
+        mixins             // Sass Mixins Folder
+        variables.scss     // Sass Variables
+    
+    - core/
+        reset.scss         // Reset
+        typography.scss    // Typography Rules
+
+    - components/
+        buttons.scss       // Buttons
+        cards.scss         // Cards
+        heart.scss         // Heart animation
+        loader.scss        // Loader
+    
+    - layout/
+        footer.scss        // Footer
+        header.scss        // Header
+        navigation.scss    // Navigation
+    
+    - pages/
+        home.scss           // Home styles
+        restaurants.scss    // Restaurant pages styles
+        
+    - app.scss             // Main Sass file
+
+Git structure
+
+Master : first commit : core, app.scss
+
+    - Branch 1: abstracts
+    - Branch 2: components
+    - Branch 3: layout
+    - Branch 4: pages
+    - Branch 5: 
+    - Branch 6: 
+    - Branch 7: 
+    - Branch 8: 

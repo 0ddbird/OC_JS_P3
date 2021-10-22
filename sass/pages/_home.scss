@@ -1,0 +1,28 @@
+@use "../abstracts/" as a;
+
+#location {
+    @include a.flex-center();
+    width: 100%;
+    height: 2em;
+    background-color: a.$clr-dgrey;
+
+
+    p::before {
+        position: relative;
+        right: 1em;
+        @include a.fa-icon(a.$ico-map-marker);
+    }
+}
+
+#cta {
+    @include a.flex-center($direction: column);
+
+    p {
+        font-weight: a.$fw-thin;
+    }
+}
+
+#how_to {
+    display: flex;
+    flex-direction: column;
+}

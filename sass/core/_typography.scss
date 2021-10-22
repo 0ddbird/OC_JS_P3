@@ -1,0 +1,21 @@
+@use "../abstracts/" as a;
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: a.$fw-bold;
+}
+
+h2 {
+    font-size: 1.8em;
+    font-weight: a.$fw-bold;
+}
+
+h3 {
+    font-size: 1.6em;
+    font-weight: a.$fw-bold;
+}
