@@ -2,8 +2,12 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+
 
     img {
+        padding-top: 22px;
+        padding-bottom: 10px;
         width: 164px;
         height: auto;
     }

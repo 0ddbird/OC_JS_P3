@@ -12,9 +12,10 @@
     @debug "font-weight: " #{$font-weight}; */
 }
 
-@mixin flex-center($direction: row, $justify: center, $align: center) {
+@mixin flex-center($direction: row, $wrap: nowrap, $justify: center, $align: center) {
     display: flex;
     flex-direction: $direction;
+    flex-wrap: $wrap;
     justify-content: $justify;
     align-items: $align;
 }

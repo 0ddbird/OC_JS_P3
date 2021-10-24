@@ -1,6 +1,31 @@
+@use '../abstracts/' as a;
+
 footer {
+    background-color: a.$clr-grey4;
+    padding: 1em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    color: white;
+    
     img {
         width: 90px;
         height: auto; 
+        margin-bottom: 1em;
     }
+
+    li {
+        margin-bottom: 1em;
+    }
+}
+
+
+#suggest::before {
+    @include a.fa-icon(a.$ico-usentsils);
+    margin-right: 1ch;
+
+}
+
+#partnership::before {
+    @include a.fa-icon(a.$ico-handshake);
+    margin-right: 1ch;
 }

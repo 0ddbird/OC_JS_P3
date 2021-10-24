@@ -2,32 +2,45 @@
 
 .tile {
     @include a.flex-center();
-    background-color: a.$clr-lgrey;
-    padding: 1em;
-    border-radius: 16px;
-    margin: 1em;
+    height: 4em;
+    min-width: 300px;
+    max-width: 385px;
+    position: relative;
+    background-color: a.$clr-grey1;
+    font-weight: a.$fw-bold;
+    border-radius: 22px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.20);
 }
 
-#choose{
-    p::before {
-        position: relative;
-        right: 1em;
-        @include a.fa-icon(a.$ico-mobile);
-    }
+.step-tag {
+    @include a.flex-center();
+    position: absolute;
+    left: -13px;
+    top: center;
+    border-radius: 100%;
+    background-color: a.$clr-primary;
+    color: white;
+    width: 1.8em;
+    height: 1.8em;
+    
 }
 
-#compose {
-    p::before {
-        position: relative;
-        right: 1em;
-        @include a.fa-icon(a.$ico-list);
-    }
+.tile p::before {
+    color: a.$clr-grey3;
+    position: relative;
+    right: 1em;
 }
 
-#taste {
-    p::before {
-       position: relative;
-       right: 1em;
-       @include a.fa-icon(a.$ico-store);
-    }
+#choose p::before{     
+    @include a.fa-icon(a.$ico-mobile);
+}
+
+#compose p::before{
+    @include a.fa-icon(a.$ico-list);
+}
+
+#taste p::before{    
+    @include a.fa-icon(a.$ico-store);
 }

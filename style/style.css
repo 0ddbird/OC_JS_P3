@@ -81,36 +81,49 @@ th {
 /*Font Awesome icons*/
 * {
   font-family: "Roboto", sans-serif;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 1.6em;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 1.8em;
+  font-size: 1.4em;
   font-weight: 700;
 }
 
 h3 {
-  font-size: 1.6em;
+  font-size: 1.2em;
   font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:active, a:hover, a:link, a:visited {
+  text-decoration: none;
+  color: inherit;
 }
 
 #location {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 2em;
+  height: 3em;
   background-color: #eaeaea;
+  box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+#location p {
+  font-weight: 700;
 }
 #location p::before {
-  position: relative;
-  right: 1em;
   display: inline-block;
   font-family: "Font Awesome 5 Free";
   font-style: normal;
@@ -121,40 +134,125 @@ h3 {
   content: "\f3c5";
   /*  @debug "content: " \f3c5;
    @debug "font-weight: " 900; */
+  position: relative;
+  right: 1em;
 }
 
 #cta {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+  background-color: #f6f6f6;
+  padding: 1em;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+#cta h1 {
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 #cta p {
+  text-align: center;
   font-weight: 100;
 }
 
 #how_to {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1em 3em;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  padding-left: 1em;
+}
+#how_to h2 {
+  width: 100%;
 }
 
+#restaurants {
+  background-color: #f6f6f6;
+  padding: 1em;
+  padding-top: 2em;
+  padding-bottom: 4em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1em 1em;
+}
+#restaurants h2 {
+  width: 100%;
+}
+
+footer {
+  background-color: #353535;
+  padding: 1em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  color: white;
+}
 footer img {
   width: 90px;
   height: auto;
+  margin-bottom: 1em;
+}
+footer li {
+  margin-bottom: 1em;
+}
+
+#suggest::before {
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 900;
+  content: "\f2e7";
+  /*  @debug "content: " \f2e7;
+   @debug "font-weight: " 900; */
+  margin-right: 1ch;
+}
+
+#partnership::before {
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 900;
+  content: "\f4c4";
+  /*  @debug "content: " \f4c4;
+   @debug "font-weight: " 900; */
+  margin-right: 1ch;
 }
 
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 header img {
+  padding-top: 22px;
+  padding-bottom: 10px;
   width: 164px;
   height: auto;
 }
 
 button {
+  margin-top: 2em;
+  margin-bottom: 2em;
   padding: 1em;
+  padding-right: 1.25em;
+  padding-left: 1.25em;
   background: linear-gradient(#FF79DA, #9356DC);
   border: none;
   border-radius: 2em;
@@ -165,27 +263,86 @@ button {
 .card {
   background-color: white;
   border-radius: 15px;
-  margin: 1em;
-  height: 25rem;
+  height: 250px;
+  width: 335px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.card__picture {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-fit: cover;
+  height: 68%;
   width: 100%;
 }
 
+.card__details {
+  height: 32%;
+  display: flex;
+  padding-left: 1em;
+  padding-right: 1em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .card__details__text {
+    display: flex;
+    flex-direction: column;
+}
+ */
+/* 
+.card__tag-new {
+    background-color: a.$clr-tertiary;
+    position: absolute;
+    z-index: 3;
+    width: 10em;
+    height: 1em;
+    top: 10px;
+    right: 10px;
+} */
 /* @include a.fa-icon($ico-heart)
 @include a.fa-icon($ico-heart, 400) */
 .tile {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
+  height: 4em;
+  min-width: 300px;
+  max-width: 385px;
+  position: relative;
   background-color: #f6f6f6;
-  padding: 1em;
-  border-radius: 16px;
-  margin: 1em;
+  font-weight: 700;
+  border-radius: 22px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.step-tag {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: -13px;
+  top: center;
+  border-radius: 100%;
+  background-color: #9356DC;
+  color: white;
+  width: 1.8em;
+  height: 1.8em;
+}
+
+.tile p::before {
+  color: #7e7e7e;
+  position: relative;
+  right: 1em;
 }
 
 #choose p::before {
-  position: relative;
-  right: 1em;
   display: inline-block;
   font-family: "Font Awesome 5 Free";
   font-style: normal;
@@ -199,8 +356,6 @@ button {
 }
 
 #compose p::before {
-  position: relative;
-  right: 1em;
   display: inline-block;
   font-family: "Font Awesome 5 Free";
   font-style: normal;
@@ -214,8 +369,6 @@ button {
 }
 
 #taste p::before {
-  position: relative;
-  right: 1em;
   display: inline-block;
   font-family: "Font Awesome 5 Free";
   font-style: normal;
