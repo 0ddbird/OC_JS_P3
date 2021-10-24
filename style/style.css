@@ -166,7 +166,7 @@ a:active, a:hover, a:link, a:visited {
   justify-content: center;
   align-items: center;
   gap: 1em 3em;
-  padding-top: 3em;
+  padding-top: 2em;
   padding-bottom: 3em;
   padding-left: 1em;
 }
@@ -251,8 +251,6 @@ button {
   margin-top: 2em;
   margin-bottom: 2em;
   padding: 1em;
-  padding-right: 1.25em;
-  padding-left: 1.25em;
   background: linear-gradient(#FF79DA, #9356DC);
   border: none;
   border-radius: 2em;
@@ -261,6 +259,7 @@ button {
 }
 
 .card {
+  position: relative;
   background-color: white;
   border-radius: 15px;
   height: 250px;
@@ -277,31 +276,46 @@ button {
 }
 
 .card__details {
-  height: 32%;
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 32%;
   padding-left: 1em;
   padding-right: 1em;
-  justify-content: space-between;
+}
+
+.card__tag-new {
+  background-color: #99E2D0;
+  position: absolute;
+  padding-right: 1em;
+  padding-left: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-radius: 2px;
+  top: 1em;
+  right: 1em;
+  font-size: 0.8em;
+  font-weight: 700;
+  color: #008766;
+}
+
+.heart-container {
+  height: 50px;
+  height: 4em;
+  width: 4em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
   align-items: center;
 }
 
-/* .card__details__text {
-    display: flex;
-    flex-direction: column;
+.fa-heart {
+  font-size: 1.5em;
 }
- */
-/* 
-.card__tag-new {
-    background-color: a.$clr-tertiary;
-    position: absolute;
-    z-index: 3;
-    width: 10em;
-    height: 1em;
-    top: 10px;
-    right: 10px;
-} */
-/* @include a.fa-icon($ico-heart)
-@include a.fa-icon($ico-heart, 400) */
+
 .tile {
   display: flex;
   flex-direction: row;

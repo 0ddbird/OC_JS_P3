@@ -1,6 +1,7 @@
 @use "../abstracts/" as a;
 
 .card {
+    position: relative;
     background-color: white;
     border-radius: 15px;
     height: 250px;
@@ -17,26 +18,24 @@
 }
 
 .card__details {
+    @include a.flex-center($justify: space-between);
     height: 32%;
-    display: flex;
     padding-left: 1em;
     padding-right: 1em;
-    justify-content: space-between;
-    align-items: center;
 }
 
-/* .card__details__text {
-    display: flex;
-    flex-direction: column;
-}
- */
-/* 
+
 .card__tag-new {
     background-color: a.$clr-tertiary;
     position: absolute;
-    z-index: 3;
-    width: 10em;
-    height: 1em;
-    top: 10px;
-    right: 10px;
-} */
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-radius: 2px;
+    top: 1em;
+    right: 1em;
+    font-size: 0.8em;
+    font-weight: a.$fw-bold;
+    color: a.$clr-tertiary-highlight;
+}
