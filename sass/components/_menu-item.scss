@@ -1,0 +1,52 @@
+@use '../abstracts/' as a;
+
+.menu-item {
+    @include a.flex-center($justify: space-between, $wrap:nowrap);
+    border-radius: 15px;
+    height: 4.5em;
+    background-color: white;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+}
+
+.menu-item:hover .menu-item__check {
+    margin-right: 0;
+}
+
+.menu-item__description {
+    width: 100%;
+    overflow:hidden;
+    white-space: nowrap;
+    padding-left: 1em;
+    h3 {
+        margin-bottom: 0.5em;
+    }
+    h3, p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        /* min-width: 0; */
+    }
+}
+
+.menu-item__description__bottom_line {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    span {
+        padding: 0 1em 0 1em;
+        flex-shrink: 0;
+    }
+}
+
+
+
+.menu-item__check {
+    @include a.flex-center();
+    background-color: a.$clr-tertiary;
+    color: white;
+    height: 100%;
+    width: 80px;
+    margin-right: -80px;
+    transition: margin 0.5s ease-in-out;
+}

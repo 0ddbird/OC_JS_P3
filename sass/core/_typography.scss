@@ -1,5 +1,7 @@
 @use "../abstracts/" as a;
 
+
+/* General typography settings */
 * {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -19,3 +21,37 @@ h3 {
     font-size: 1.2em;
     font-weight: a.$fw-bold;
 }
+
+
+/* Restaurants pages typography */
+.restaurant-page__title h1 {
+    font-family: 'Shrikhand', cursive;
+    font-weight: normal;
+}
+
+.restaurant__section {
+    font-size: 14px;
+
+    h2 {
+        text-transform: uppercase;
+        font-weight: normal;
+        font-weight: a.$fw-thin;    
+    }
+}
+
+.section-title__container h2 {
+    font-size: 18px;
+}
+
+.menu-item  {
+    h3, p, span {
+        font-size: 0.9rem;
+    }
+    
+    p {
+    font-weight: a.$fw-thin;
+    }
+}
+
+
+

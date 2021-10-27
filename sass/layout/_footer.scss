@@ -27,5 +27,6 @@ footer {
 
 #partnership::before {
     @include a.fa-icon(a.$ico-handshake);
+    font-size: 0.72em;
     margin-right: 1ch;
 }
