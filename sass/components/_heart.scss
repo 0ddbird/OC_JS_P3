@@ -9,4 +9,28 @@
 
 .fa-heart {
     font-size: 1.5em;
+    position: relative;
+}
+
+.fa-heart::after {
+    @include a.fa-icon($content:a.$ico-heart);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: a.$clr-primary;
+    opacity: 0;
+    transform: scale(0);
+    transition: scale 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+.fa-heart:hover {
+    color: a.$clr-primary;
+    transition: color 1s ease-in-out;
+}
+
+.fa-heart:hover::after {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 1s ease-in-out;
 }

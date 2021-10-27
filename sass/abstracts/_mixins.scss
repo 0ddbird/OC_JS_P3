@@ -1,15 +1,14 @@
-@mixin fa-icon($content:'', $font-weight:900) {
+@mixin fa-icon($content:'') {
     display: inline-block;
     font-family: "Font Awesome 5 Free";
     font-style: normal;
     font-variant: normal;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
-    font-weight: $font-weight;
+    font-weight: 900;
     content: $content;
 
-   /*  @debug "content: " #{$content};
-    @debug "font-weight: " #{$font-weight}; */
+   /*  @debug "content: " #{$content}; */
 }
 
 @mixin flex-center($direction: row, $wrap: nowrap, $justify: center, $align: center) {

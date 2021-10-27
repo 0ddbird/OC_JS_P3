@@ -159,8 +159,7 @@ a:active, a:hover, a:link, a:visited {
   -webkit-font-smoothing: antialiased;
   font-weight: 900;
   content: "\f3c5";
-  /*  @debug "content: " \f3c5;
-   @debug "font-weight: " 900; */
+  /*  @debug "content: " \f3c5; */
   position: relative;
   right: 1em;
 }
@@ -299,8 +298,7 @@ footer li {
   -webkit-font-smoothing: antialiased;
   font-weight: 900;
   content: "\f2e7";
-  /*  @debug "content: " \f2e7;
-   @debug "font-weight: " 900; */
+  /*  @debug "content: " \f2e7; */
   margin-right: 1ch;
 }
 
@@ -313,8 +311,7 @@ footer li {
   -webkit-font-smoothing: antialiased;
   font-weight: 900;
   content: "\f4c4";
-  /*  @debug "content: " \f4c4;
-   @debug "font-weight: " 900; */
+  /*  @debug "content: " \f4c4; */
   font-size: 0.72em;
   margin-right: 1ch;
 }
@@ -409,6 +406,38 @@ button {
 
 .fa-heart {
   font-size: 1.5em;
+  position: relative;
+}
+
+.fa-heart::after {
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 900;
+  content: "\f004";
+  /*  @debug "content: " \f004; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #9356DC;
+  opacity: 0;
+  transform: scale(0);
+  transition: scale 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+.fa-heart:hover {
+  color: #9356DC;
+  transition: color 1s ease-in-out;
+}
+
+.fa-heart:hover::after {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 1s ease-in-out;
 }
 
 .tile {
@@ -460,8 +489,7 @@ button {
   -webkit-font-smoothing: antialiased;
   font-weight: 900;
   content: "\f3cd";
-  /*  @debug "content: " \f3cd;
-   @debug "font-weight: " 900; */
+  /*  @debug "content: " \f3cd; */
 }
 
 #compose p::before {
@@ -473,8 +501,7 @@ button {
   -webkit-font-smoothing: antialiased;
   font-weight: 900;
   content: "\f0ca";
-  /*  @debug "content: " \f0ca;
-   @debug "font-weight: " 900; */
+  /*  @debug "content: " \f0ca; */
 }
 
 #taste p::before {
@@ -486,8 +513,7 @@ button {
   -webkit-font-smoothing: antialiased;
   font-weight: 900;
   content: "\f54e";
-  /*  @debug "content: " \f54e;
-   @debug "font-weight: " 900; */
+  /*  @debug "content: " \f54e; */
 }
 
 .menu-item {
