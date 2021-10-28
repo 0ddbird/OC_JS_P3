@@ -2,8 +2,8 @@
     
     @for $i from 1 through 5 {
         & .menu-item:nth-child(#{$i}n) {
-            animation: slideUp 1s forwards ease;
-            animation-delay: #{$i * 0.5}s;
+            animation: slideUp .75s forwards ease;
+            animation-delay: #{$i * 0.25}s;
         }
     }
 

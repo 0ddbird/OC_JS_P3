@@ -14,6 +14,12 @@
     margin-right: 0;
 }
 
+.menu-item:hover .fa-check-circle {
+    transform: rotate(0deg);
+    transition-delay: 2s;
+    transition: transform .5s ease-in;
+ }
+
 .menu-item__description {
     width: 100%;
     overflow:hidden;
@@ -40,8 +46,6 @@
     }
 }
 
-
-
 .menu-item__check {
     @include a.flex-center();
     background-color: a.$clr-tertiary;
@@ -49,5 +53,11 @@
     height: 100%;
     width: 80px;
     margin-right: -80px;
-    transition: margin 0.5s ease-in-out;
+    transition: margin .5s ease-in-out;
+    cursor: pointer;
+}
+
+.fa-check-circle {
+    transform: rotate(180deg);
+    transition: transform .5s ease;
 }

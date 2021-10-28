@@ -10,6 +10,7 @@
 .fa-heart {
     font-size: 1.5em;
     position: relative;
+    cursor: pointer;
 }
 
 .fa-heart::after {
@@ -19,18 +20,18 @@
     left: calc(50% - 0.5em);
     color: a.$clr-secondary;
     opacity: 0;
-    transition: opacity 1s ease;
+    transition: opacity .25s ease;
     transform: scale(0);
-    transition: transform 1s ease;
+    transition: transform .25s ease;
 }
 
 .fa-heart:hover {
-    color: a.$clr-secondary;
-    transition: color 1s ease;
+    color: rgba(100,100,100,0);
+    transition: color .25s ease;
 }
 
 .fa-heart:hover::after {
     opacity: 1;
     transform: scale(1);
-    transition: all 1s ease-in-out;
+    transition: all .25s ease-in-out;
 }
