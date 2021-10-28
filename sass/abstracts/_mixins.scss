@@ -1,3 +1,5 @@
+@use "./variables" as v;
+
 @mixin fa-icon($content:'') {
     display: inline-block;
     font-family: "Font Awesome 5 Free";
@@ -19,3 +21,15 @@
     align-items: $align;
 }
 
+@mixin box-shadow($border-radius: 0, $opacity: 0, $box-shadow:v.$box-shadow) {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: $opacity;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    transition: opacity 1s ease;
+}

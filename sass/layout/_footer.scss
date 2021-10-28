@@ -21,12 +21,14 @@ footer {
 
 #suggest::before {
     @include a.fa-icon(a.$ico-usentsils);
-    margin-right: 1ch;
+    width: 16px;
+    margin-right: 4px;
 
 }
 
 #partnership::before {
     @include a.fa-icon(a.$ico-handshake);
-    font-size: 0.72em;
-    margin-right: 1ch;
+    font-size: 0.75em;
+    width: 16px;
+    margin-right: 4px;
 }

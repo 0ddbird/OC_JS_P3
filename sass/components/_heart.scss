@@ -16,17 +16,17 @@
     @include a.fa-icon($content:a.$ico-heart);
     position: absolute;
     top: 0;
-    left: 0;
-    color: a.$clr-primary;
+    left: calc(50% - 0.5em);
+    color: a.$clr-secondary;
     opacity: 0;
+    transition: opacity 1s ease;
     transform: scale(0);
-    transition: scale 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
+    transition: transform 1s ease;
 }
 
 .fa-heart:hover {
-    color: a.$clr-primary;
-    transition: color 1s ease-in-out;
+    color: a.$clr-secondary;
+    transition: color 1s ease;
 }
 
 .fa-heart:hover::after {
