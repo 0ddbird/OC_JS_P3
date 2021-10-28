@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
 html,
 body,
@@ -598,7 +599,7 @@ button {
 }
 
 .menu-item:hover .fa-check-circle {
-  transform: rotate(0deg);
+  transform: rotate(360deg);
   transition-delay: 2s;
   transition: transform 0.5s ease-in;
 }
@@ -643,8 +644,9 @@ button {
   cursor: pointer;
 }
 
+/* Vérifier si rotation inverse demandée */
 .fa-check-circle {
-  transform: rotate(180deg);
+  transform: rotate(0deg);
   transition: transform 0.5s ease;
 }
 
