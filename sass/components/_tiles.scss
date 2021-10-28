@@ -1,5 +1,7 @@
 @use "../abstracts/" as a;
 
+$tile__element-transition: .25s;
+
 .tile {
     @include a.flex-center();
     height: 4em;
@@ -16,11 +18,7 @@
 }
 
 .tile::after {
-    @include a.box-shadow($border-radius: 22px, $opacity:0, $box-shadow: a.$box-shadow);
-}
-
-.tile:hover::after {
-    @include a.box-shadow(22px, $opacity:1, $box-shadow: a.$box-shadow-hover);
+    @include a.box-shadow($border-radius: 22px, $opacity:0, $box-shadow: a.$box-shadow, $transition: $tile__element-transition);
 }
 
 .step-tag {
@@ -40,6 +38,7 @@
     color: a.$clr-grey3;
     position: relative;
     right: 1em;
+    transition: color $tile__element-transition ease-in;
 }
 
 #choose p::before{     
@@ -52,4 +51,15 @@
 
 #taste p::before{    
     @include a.fa-icon(a.$ico-store);
+}
+
+/* :hover */
+.tile:hover::after {
+    @include a.box-shadow(22px, $opacity:1, $box-shadow: a.$box-shadow-hover, $transition: $tile__element-transition);
+}
+
+.tile:hover p::before {
+    color: a.$clr-primary;
+    transition: color $tile__element-transition ease-in;
+
 }

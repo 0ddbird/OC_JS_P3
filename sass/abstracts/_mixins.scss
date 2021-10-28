@@ -21,8 +21,7 @@
     align-items: $align;
 }
 
-@mixin box-shadow($border-radius: 0, $opacity: 0, $box-shadow:v.$box-shadow) {
-    content:'';
+@mixin box-shadow($border-radius: 0, $opacity: 0, $box-shadow:v.$box-shadow, $transition:1s) {
     position: absolute;
     top: 0;
     left: 0;
@@ -31,5 +30,5 @@
     opacity: $opacity;
     border-radius: $border-radius;
     box-shadow: $box-shadow;
-    transition: opacity 1s ease;
+    transition: opacity $transition ease;
 }

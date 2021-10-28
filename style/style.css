@@ -114,7 +114,7 @@ h3 {
 .restaurant__section h2 {
   text-transform: uppercase;
   font-weight: normal;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .section-title__container h2 {
@@ -125,7 +125,7 @@ h3 {
   font-size: 0.9rem;
 }
 .menu-item p {
-  font-weight: 100;
+  font-weight: 300;
 }
 
 a {
@@ -184,7 +184,7 @@ a:active, a:hover, a:link, a:visited {
 }
 #cta p {
   text-align: center;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 #how_to {
@@ -443,6 +443,8 @@ button {
   font-size: 1.5em;
   position: relative;
   cursor: pointer;
+  color: inherit;
+  transition: color 0.5s ease;
 }
 
 .fa-heart::after {
@@ -460,20 +462,31 @@ button {
   left: calc(50% - 0.5em);
   color: #FF79DA;
   opacity: 0;
-  transition: opacity 0.25s ease;
-  transform: scale(0);
-  transition: transform 0.25s ease;
 }
 
 .fa-heart:hover {
-  color: rgba(100, 100, 100, 0);
-  transition: color 0.25s ease;
+  opacity: 1;
+  color: #FF79DA;
+  transition: color 0.5s ease;
 }
 
 .fa-heart:hover::after {
   opacity: 1;
-  transform: scale(1);
-  transition: all 0.25s ease-in-out;
+  animation: heartBeat 0.75s ease-in-out;
+}
+@keyframes heartBeat {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  85% {
+    opacity: 1;
+    transform: scale(1.35);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .tile {
@@ -496,7 +509,6 @@ button {
 }
 
 .tile::after {
-  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -504,21 +516,8 @@ button {
   bottom: 0;
   opacity: 0;
   border-radius: 22px;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.12), 0px 8px 8px rgba(0, 0, 0, 0.12);
-  transition: opacity 1s ease;
-}
-
-.tile:hover::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 1;
-  border-radius: 22px;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.14), 0px 4px 4px rgba(0, 0, 0, 0.14), 0px 8px 8px rgba(0, 0, 0, 0.14), 0px 16px 16px rgba(0, 0, 0, 0.14);
-  transition: opacity 1s ease;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: opacity 0.25s ease;
 }
 
 .step-tag {
@@ -542,6 +541,7 @@ button {
   color: #7e7e7e;
   position: relative;
   right: 1em;
+  transition: color 0.25s ease-in;
 }
 
 #choose p::before {
@@ -578,6 +578,24 @@ button {
   font-weight: 900;
   content: "\f54e";
   /*  @debug "content: " \f54e; */
+}
+
+/* :hover */
+.tile:hover::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+  border-radius: 22px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.14), 0px 4px 4px rgba(0, 0, 0, 0.14);
+  transition: opacity 0.25s ease;
+}
+
+.tile:hover p::before {
+  color: #9356DC;
+  transition: color 0.25s ease-in;
 }
 
 .menu-item {

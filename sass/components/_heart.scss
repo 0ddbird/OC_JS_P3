@@ -11,6 +11,8 @@
     font-size: 1.5em;
     position: relative;
     cursor: pointer;
+    color: inherit;
+    transition: color .5s ease;
 }
 
 .fa-heart::after {
@@ -20,18 +22,16 @@
     left: calc(50% - 0.5em);
     color: a.$clr-secondary;
     opacity: 0;
-    transition: opacity .25s ease;
-    transform: scale(0);
-    transition: transform .25s ease;
+
 }
 
 .fa-heart:hover {
-    color: rgba(100,100,100,0);
-    transition: color .25s ease;
+    opacity: 1;
+    color: a.$clr-secondary;
+    transition: color .5s ease;
 }
 
 .fa-heart:hover::after {
     opacity: 1;
-    transform: scale(1);
-    transition: all .25s ease-in-out;
+    @include a.animation-heartBeat(.75s);
 }
