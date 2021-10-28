@@ -18,7 +18,17 @@ $tile__element-transition: .25s;
 }
 
 .tile::after {
-    @include a.box-shadow($border-radius: 22px, $opacity:0, $box-shadow: a.$box-shadow, $transition: $tile__element-transition);
+    position: absolute;
+    content:"";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 22px;
+    box-shadow: a.$box-shadow-hover;
+    opacity: 0;
+    transition: opacity .5s ease;
+    
 }
 
 .step-tag {
@@ -55,7 +65,8 @@ $tile__element-transition: .25s;
 
 /* :hover */
 .tile:hover::after {
-    @include a.box-shadow(22px, $opacity:1, $box-shadow: a.$box-shadow-hover, $transition: $tile__element-transition);
+    opacity: 1;
+    transition: opacity .5s ease;
 }
 
 .tile:hover p::before {

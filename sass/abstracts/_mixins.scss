@@ -20,15 +20,3 @@
     justify-content: $justify;
     align-items: $align;
 }
-
-@mixin box-shadow($border-radius: 0, $opacity: 0, $box-shadow:v.$box-shadow, $transition:1s) {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: $opacity;
-    border-radius: $border-radius;
-    box-shadow: $box-shadow;
-    transition: opacity $transition ease;
-}
