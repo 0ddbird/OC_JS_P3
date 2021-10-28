@@ -28,7 +28,6 @@ $tile__element-transition: .25s;
     box-shadow: a.$box-shadow-hover;
     opacity: 0;
     transition: opacity .5s ease;
-    
 }
 
 .step-tag {
@@ -72,5 +71,4 @@ $tile__element-transition: .25s;
 .tile:hover p::before {
     color: a.$clr-primary;
     transition: color $tile__element-transition ease-in;
-
 }
