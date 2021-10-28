@@ -13,6 +13,10 @@ $animation-duration: 2500ms;
     right: 0;
     left: 0;
     z-index: 2;
+    display: flex;
+    wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
     
     animation-name: loaderVanish;
     animation-delay: 3s;
@@ -32,8 +36,14 @@ $animation-duration: 2500ms;
 
 #loader-animation-svg{
     position: absolute;
-    height: 375px;
-    width: 375px;
+
+    @media screen and (min-aspect-ratio:1) {
+        height: 100vh;    
+    }
+    @media screen and (max-aspect-ratio:1) {
+        width: 100vw;    
+    }
+
 
     #pan-logo_x5f_letters_to {
         animation: pan-logo_x5f_letters_to__to $animation-duration linear 1 normal forwards;

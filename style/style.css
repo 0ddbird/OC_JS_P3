@@ -542,6 +542,10 @@ button:hover::after {
   right: 0;
   left: 0;
   z-index: 2;
+  display: flex;
+  wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
   animation-name: loaderVanish;
   animation-delay: 3s;
   animation-duration: 0.5s;
@@ -559,8 +563,16 @@ button:hover::after {
 
 #loader-animation-svg {
   position: absolute;
-  height: 375px;
-  width: 375px;
+}
+@media screen and (min-aspect-ratio: 1) {
+  #loader-animation-svg {
+    height: 100vh;
+  }
+}
+@media screen and (max-aspect-ratio: 1) {
+  #loader-animation-svg {
+    width: 100vw;
+  }
 }
 #loader-animation-svg #pan-logo_x5f_letters_to {
   animation: pan-logo_x5f_letters_to__to 2500ms linear 1 normal forwards;
