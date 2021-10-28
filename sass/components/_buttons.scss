@@ -4,15 +4,17 @@ button {
     position: relative;
     margin-top: 2em;
     margin-bottom: 2em;
-    padding: 1em;
-    background: linear-gradient(a.$clr-secondary, a.$clr-primary);
+    padding: 0 1em 0 1em;
+    height: 50px;
     border: none;
     border-radius: 2em;
     color: white;
     font-weight: a.$fw-bold;
     cursor: pointer;
     box-shadow: a.$box-shadow;
-
+    background-color: a.$clr-primary;
+    box-shadow: 0 50px 20px -35px a.$clr-secondary inset;
+    transition: box-shadow .5s ease-in-out;
 }
 
 button::after {
@@ -25,16 +27,17 @@ button::after {
     opacity: 0;
     border-radius: 2em;
     box-shadow: a.$box-shadow-hover;
-    transition: opacity .5s ease;
+    transition: opacity .5s ease-in-out;
 }
 
 button:hover {
-    background: linear-gradient(a.$clr-secondary-light, a.$clr-primary-light);
+    box-shadow: 0 50px 20px -25px a.$clr-secondary-light inset; 
+    transition: box-shadow .5s ease-in-out;
 }
 
 button:hover::after{
     opacity: 1;
-    transition: opacity .5s ease;
+    transition: opacity .5s ease-in-out;
 }
 
 
