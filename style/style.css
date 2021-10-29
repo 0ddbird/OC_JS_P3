@@ -159,7 +159,6 @@ a:active, a:hover, a:link, a:visited {
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
-  /* -webkit-font-smoothing: antialiased; */
   font-weight: 900;
   content: "\f3c5";
   /*  @debug "content: " \f3c5; */
@@ -328,7 +327,6 @@ footer li {
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
-  /* -webkit-font-smoothing: antialiased; */
   font-weight: 900;
   content: "\f2e7";
   /*  @debug "content: " \f2e7; */
@@ -342,7 +340,6 @@ footer li {
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
-  /* -webkit-font-smoothing: antialiased; */
   font-weight: 900;
   content: "\f4c4";
   /*  @debug "content: " \f4c4; */
@@ -370,7 +367,7 @@ header img {
   left: 0;
   height: 10px;
   width: 10px;
-  background-color: yellow;
+  background-color: greenyellow;
 }
 
 .fa-arrow-left {
@@ -491,7 +488,6 @@ button:hover::after {
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
-  /* -webkit-font-smoothing: antialiased; */
   font-weight: 900;
   content: "\f004";
   /*  @debug "content: " \f004; */
@@ -1149,7 +1145,6 @@ button:hover::after {
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
-  /* -webkit-font-smoothing: antialiased; */
   font-weight: 900;
   content: "\f3cd";
   /*  @debug "content: " \f3cd; */
@@ -1161,7 +1156,6 @@ button:hover::after {
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
-  /* -webkit-font-smoothing: antialiased; */
   font-weight: 900;
   content: "\f0ca";
   /*  @debug "content: " \f0ca; */
@@ -1173,7 +1167,6 @@ button:hover::after {
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
-  /* -webkit-font-smoothing: antialiased; */
   font-weight: 900;
   content: "\f54e";
   /*  @debug "content: " \f54e; */
