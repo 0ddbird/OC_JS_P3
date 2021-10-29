@@ -37,10 +37,10 @@ $animation-duration: 2500ms;
 #loader-animation-svg{
     position: absolute;
 
-    @media screen and (min-aspect-ratio:1) {
+    @media screen and (min-aspect-ratio:1/1) {
         height: 100vh;    
     }
-    @media screen and (max-aspect-ratio:1) {
+    @media screen and (max-aspect-ratio:1/1) {
         width: 100vw;    
     }
 

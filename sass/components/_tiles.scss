@@ -34,7 +34,7 @@ $tile__element-transition: .25s;
     @include a.flex-center();
     position: absolute;
     left: -15px;
-    top: center;
+    top: 15px;
     border-radius: 100%;
     background-color: a.$clr-primary;
     color: white;

@@ -159,7 +159,7 @@ a:active, a:hover, a:link, a:visited {
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
+  /* -webkit-font-smoothing: antialiased; */
   font-weight: 900;
   content: "\f3c5";
   /*  @debug "content: " \f3c5; */
@@ -328,7 +328,7 @@ footer li {
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
+  /* -webkit-font-smoothing: antialiased; */
   font-weight: 900;
   content: "\f2e7";
   /*  @debug "content: " \f2e7; */
@@ -342,7 +342,7 @@ footer li {
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
+  /* -webkit-font-smoothing: antialiased; */
   font-weight: 900;
   content: "\f4c4";
   /*  @debug "content: " \f4c4; */
@@ -394,10 +394,6 @@ button {
   background-color: #9356DC;
   box-shadow: 0 50px 20px -35px #FF79DA inset;
   transition: box-shadow 0.5s ease-in-out;
-}
-button a {
-  position: relative;
-  z-index: 1;
 }
 
 button::after {
@@ -495,7 +491,7 @@ button:hover::after {
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
+  /* -webkit-font-smoothing: antialiased; */
   font-weight: 900;
   content: "\f004";
   /*  @debug "content: " \f004; */
@@ -564,12 +560,12 @@ button:hover::after {
 #loader-animation-svg {
   position: absolute;
 }
-@media screen and (min-aspect-ratio: 1) {
+@media screen and (min-aspect-ratio: 1/1) {
   #loader-animation-svg {
     height: 100vh;
   }
 }
-@media screen and (max-aspect-ratio: 1) {
+@media screen and (max-aspect-ratio: 1/1) {
   #loader-animation-svg {
     width: 100vw;
   }
@@ -1131,7 +1127,7 @@ button:hover::after {
   align-items: center;
   position: absolute;
   left: -15px;
-  top: center;
+  top: 15px;
   border-radius: 100%;
   background-color: #9356DC;
   color: white;
@@ -1153,7 +1149,7 @@ button:hover::after {
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
+  /* -webkit-font-smoothing: antialiased; */
   font-weight: 900;
   content: "\f3cd";
   /*  @debug "content: " \f3cd; */
@@ -1165,7 +1161,7 @@ button:hover::after {
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
+  /* -webkit-font-smoothing: antialiased; */
   font-weight: 900;
   content: "\f0ca";
   /*  @debug "content: " \f0ca; */
@@ -1177,7 +1173,7 @@ button:hover::after {
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
+  /* -webkit-font-smoothing: antialiased; */
   font-weight: 900;
   content: "\f54e";
   /*  @debug "content: " \f54e; */
