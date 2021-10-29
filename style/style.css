@@ -367,7 +367,7 @@ header img {
   left: 0;
   height: 10px;
   width: 10px;
-  background-color: greenyellow;
+  background-color: red;
 }
 
 .fa-arrow-left {
@@ -376,7 +376,7 @@ header img {
   z-index: 10;
 }
 
-button {
+.cta__btn {
   position: relative;
   margin-top: 2em;
   margin-bottom: 2em;
@@ -391,9 +391,19 @@ button {
   background-color: #9356DC;
   box-shadow: 0 50px 20px -35px #FF79DA inset;
   transition: box-shadow 0.5s ease-in-out;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
-button::after {
+.order__btn {
+  padding-right: 3em;
+  padding-left: 3em;
+}
+
+.cta__btn::after {
   content: "";
   position: absolute;
   top: 0;
@@ -406,19 +416,14 @@ button::after {
   transition: opacity 0.5s ease-in-out;
 }
 
-button:hover {
+.cta__btn:hover {
   box-shadow: 0 50px 20px -25px #fd8ce9 inset;
   transition: box-shadow 0.5s ease-in-out;
 }
 
-button:hover::after {
+.cta__btn:hover::after {
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
-}
-
-.order-button {
-  padding-right: 3em;
-  padding-left: 3em;
 }
 
 .card {

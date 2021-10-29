@@ -1,6 +1,6 @@
 @use "../abstracts" as a;
 
-button {
+.cta__btn {
     position: relative;
     margin-top: 2em;
     margin-bottom: 2em;
@@ -15,9 +15,16 @@ button {
     background-color: a.$clr-primary;
     box-shadow: 0 50px 20px -35px a.$clr-secondary inset;
     transition: box-shadow .5s ease-in-out;
+    
+    @include a.flex-center();
 }
 
-button::after {
+.order__btn {
+    padding-right: 3em;
+    padding-left: 3em;
+}
+
+.cta__btn::after {
     content: "";
     position: absolute;
     top: 0;
@@ -30,18 +37,12 @@ button::after {
     transition: opacity .5s ease-in-out;
 }
 
-button:hover {
+.cta__btn:hover {
     box-shadow: 0 50px 20px -25px a.$clr-secondary-light inset; 
     transition: box-shadow .5s ease-in-out;
 }
 
-button:hover::after{
+.cta__btn:hover::after{
     opacity: 1;
     transition: opacity .5s ease-in-out;
-}
-
-
-.order-button {
-    padding-right: 3em;
-    padding-left: 3em;
 }
