@@ -218,6 +218,11 @@ a:active, a:hover, a:link, a:visited {
   width: 100%;
 }
 
+@media screen and (min-width: 800px) {
+  #restaurants h2, #how_to h2 {
+    text-align: center;
+  }
+}
 #restaurant_picture {
   height: 300px;
   width: 100%;
