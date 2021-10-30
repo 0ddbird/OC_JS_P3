@@ -27,6 +27,18 @@
 
 }
 
+@media screen and (min-width: 800px) {
+
+    .restaurant__menu {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: a.$clr-grey1;
+        justify-content: space-evenly;
+    }
+    
+}
+
+
 .restaurant__section {
     background-color: a.$clr-grey1;
     display: flex;
@@ -34,6 +46,11 @@
     gap: 1em 0;
     padding: 1em;
     @include a.animation-slideUp();
+    
+    @media screen and (min-width: 800px) {
+        width: 500px;
+    }
+
 }
 
 .section-title__container {

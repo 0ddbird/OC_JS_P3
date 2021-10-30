@@ -250,6 +250,14 @@ a:active, a:hover, a:link, a:visited {
   width: 25%;
 }
 
+@media screen and (min-width: 800px) {
+  .restaurant__menu {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f6f6f6;
+    justify-content: space-evenly;
+  }
+}
 .restaurant__section {
   background-color: #f6f6f6;
   display: flex;
@@ -285,6 +293,11 @@ a:active, a:hover, a:link, a:visited {
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+@media screen and (min-width: 800px) {
+  .restaurant__section {
+    width: 500px;
   }
 }
 
@@ -528,7 +541,6 @@ header img {
   }
 }
 
-/* Animation duration variable */
 #loader {
   position: absolute;
   background: white;
@@ -560,6 +572,7 @@ header img {
 
 #loader-animation-svg {
   position: absolute;
+  background-color: transparent;
 }
 @media screen and (min-aspect-ratio: 1/1) {
   #loader-animation-svg {
@@ -571,81 +584,30 @@ header img {
     width: 100vw;
   }
 }
-#loader-animation-svg #pan-logo_x5f_letters_to {
-  animation: pan-logo_x5f_letters_to__to 2500ms linear 1 normal forwards;
-}
-@keyframes pan-logo_x5f_letters_to__to {
-  0% {
-    transform: translate(495.210593px, 263.316951px);
-  }
-  6.666667% {
-    transform: translate(137.210934px, 203.813253px);
-  }
-  100% {
-    transform: translate(137.210934px, 203.813253px);
-  }
-}
-#loader-animation-svg #pan-logo_x5f_letters_tr {
-  animation: pan-logo_x5f_letters_tr__tr 2500ms linear 1 normal forwards;
-}
-@keyframes pan-logo_x5f_letters_tr__tr {
-  0% {
-    transform: rotate(-10.300539deg);
-  }
-  6.666667% {
-    transform: rotate(7.167138deg);
-  }
-  33.333333% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
 #loader-animation-svg #pan-o1_to {
   animation: pan-o1_to__to 2500ms linear 1 normal forwards;
 }
 @keyframes pan-o1_to__to {
   0% {
-    transform: translate(146.099998px, 757.750031px);
-    animation-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    transform: translate(125.566482px, 420.184132px);
   }
   10% {
-    transform: translate(78.529381px, 268.763975px);
+    transform: translate(-648.123638px, 493.132058px);
+  }
+  16.666667% {
+    transform: translate(-841.546168px, 541.764008px);
   }
   23.333333% {
-    transform: translate(120.073017px, 788.713754px);
+    transform: translate(-764.177156px, -296.916082px);
   }
-  33.333333% {
-    transform: translate(258.32022px, 1025.699801px);
-    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  30% {
+    transform: translate(-700.624039px, -338.991403px);
   }
-  43.333333% {
-    transform: translate(259.573724px, 928.430646px);
-  }
-  100% {
-    transform: translate(259.573724px, 928.430646px);
-  }
-}
-#loader-animation-svg #pan-o1_tr {
-  animation: pan-o1_tr__tr 2500ms linear 1 normal forwards;
-}
-@keyframes pan-o1_tr__tr {
-  0% {
-    transform: rotate(0deg);
-    animation-timing-function: cubic-bezier(0, 0, 0.58, 1);
-  }
-  10% {
-    transform: rotate(66.317235deg);
-  }
-  23.333333% {
-    transform: rotate(66.317235deg);
-  }
-  33.333333% {
-    transform: rotate(0deg);
+  46.666667% {
+    transform: translate(-697.86086px, 384.262805px);
   }
   100% {
-    transform: rotate(0deg);
+    transform: translate(-697.86086px, 384.262805px);
   }
 }
 #loader-animation-svg #pan-h_to {
@@ -653,45 +615,25 @@ header img {
 }
 @keyframes pan-h_to__to {
   0% {
-    transform: translate(212.814568px, 746.399933px);
-    animation-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    transform: translate(192.281052px, 408.834034px);
   }
   10% {
-    transform: translate(114.309039px, 332.799591px);
+    transform: translate(-581.409068px, 475.15033px);
+  }
+  16.666667% {
+    transform: translate(-774.831598px, 519.361194px);
   }
   23.333333% {
-    transform: translate(162.111642px, 864.429017px);
+    transform: translate(-697.462586px, -235.539309px);
   }
-  33.333333% {
-    transform: translate(323.15469px, 1014.449701px);
-    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  30% {
+    transform: translate(-631.14629px, -278.427794px);
   }
-  43.333333% {
-    transform: translate(323.15469px, 917.738436px);
-  }
-  100% {
-    transform: translate(323.15469px, 917.738436px);
-  }
-}
-#loader-animation-svg #pan-h_tr {
-  animation: pan-h_tr__tr 2500ms linear 1 normal forwards;
-}
-@keyframes pan-h_tr__tr {
-  0% {
-    transform: rotate(0deg);
-    animation-timing-function: cubic-bezier(0, 0, 0.58, 1);
-  }
-  10% {
-    transform: rotate(101.142013deg);
-  }
-  23.333333% {
-    transform: rotate(101.142013deg);
-  }
-  33.333333% {
-    transform: rotate(0deg);
+  46.666667% {
+    transform: translate(-631.14629px, 372.912707px);
   }
   100% {
-    transform: rotate(0deg);
+    transform: translate(-631.14629px, 372.912707px);
   }
 }
 #loader-animation-svg #pan-m_to {
@@ -699,45 +641,25 @@ header img {
 }
 @keyframes pan-m_to__to {
   0% {
-    transform: translate(307.070335px, 757.499817px);
-    animation-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    transform: translate(286.536819px, 419.933918px);
   }
   10% {
-    transform: translate(141.769885px, 409.829436px);
+    transform: translate(-487.153301px, 477.960677px);
+  }
+  16.666667% {
+    transform: translate(-680.575831px, 516.645183px);
   }
   23.333333% {
-    transform: translate(217.867749px, 914.487192px);
+    transform: translate(-603.206819px, -154.254678px);
   }
-  33.333333% {
-    transform: translate(415.945031px, 1025.549586px);
-    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  30% {
+    transform: translate(-536.890523px, -256.531775px);
   }
-  43.333333% {
-    transform: translate(416.277144px, 928.798059px);
-  }
-  100% {
-    transform: translate(416.277144px, 928.798059px);
-  }
-}
-#loader-animation-svg #pan-m_tr {
-  animation: pan-m_tr__tr 2500ms linear 1 normal forwards;
-}
-@keyframes pan-m_tr__tr {
-  0% {
-    transform: rotate(0deg);
-    animation-timing-function: cubic-bezier(0, 0, 0.58, 1);
-  }
-  10% {
-    transform: rotate(-138.536345deg);
-  }
-  23.333333% {
-    transform: rotate(-138.536345deg);
-  }
-  33.333333% {
-    transform: rotate(0deg);
+  46.666667% {
+    transform: translate(-536.890523px, 384.012591px);
   }
   100% {
-    transform: rotate(0deg);
+    transform: translate(-536.890523px, 384.012591px);
   }
 }
 #loader-animation-svg #pan-y_to {
@@ -745,45 +667,25 @@ header img {
 }
 @keyframes pan-y_to__to {
   0% {
-    transform: translate(394.999985px, 767.300018px);
-    animation-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    transform: translate(374.466469px, 429.734119px);
   }
   10% {
-    transform: translate(227.045505px, 392.13699px);
+    transform: translate(-399.223651px, 474.497619px);
+  }
+  16.666667% {
+    transform: translate(-592.646181px, 504.339952px);
   }
   23.333333% {
-    transform: translate(283.486164px, 945.218954px);
+    transform: translate(-515.277169px, -54.264315px);
   }
-  33.333333% {
-    transform: translate(501.623805px, 1035.292039px);
-    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  30% {
+    transform: translate(-440.671336px, -313.300504px);
   }
-  43.333333% {
-    transform: translate(502.261982px, 938.012689px);
-  }
-  100% {
-    transform: translate(502.261982px, 938.012689px);
-  }
-}
-#loader-animation-svg #pan-y_tr {
-  animation: pan-y_tr__tr 2500ms linear 1 normal forwards;
-}
-@keyframes pan-y_tr__tr {
-  0% {
-    transform: rotate(0deg);
-    animation-timing-function: cubic-bezier(0, 0, 0.58, 1);
-  }
-  10% {
-    transform: rotate(65.898492deg);
-  }
-  23.333333% {
-    transform: rotate(65.898492deg);
-  }
-  33.333333% {
-    transform: rotate(0deg);
+  46.666667% {
+    transform: translate(-448.960873px, 393.812792px);
   }
   100% {
-    transform: rotate(0deg);
+    transform: translate(-448.960873px, 393.812792px);
   }
 }
 #loader-animation-svg #pan-f_to {
@@ -791,45 +693,25 @@ header img {
 }
 @keyframes pan-f_to__to {
   0% {
-    transform: translate(462.4646px, 745.949982px);
-    animation-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    transform: translate(441.931084px, 408.384083px);
   }
   10% {
-    transform: translate(161.169574px, 501.404822px);
+    transform: translate(-326.785314px, 454.80549px);
+  }
+  16.666667% {
+    transform: translate(-516.892029px, 485.753095px);
   }
   23.333333% {
-    transform: translate(326.153268px, 986.000809px);
+    transform: translate(-440.18618px, -128.335806px);
   }
-  33.333333% {
-    transform: translate(571.734677px, 1015.099751px);
-    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  30% {
+    transform: translate(-384.460754px, -273.532967px);
   }
-  43.333333% {
-    transform: translate(571.298501px, 918.95528px);
-  }
-  100% {
-    transform: translate(571.298501px, 918.95528px);
-  }
-}
-#loader-animation-svg #pan-f_tr {
-  animation: pan-f_tr__tr 2500ms linear 1 normal forwards;
-}
-@keyframes pan-f_tr__tr {
-  0% {
-    transform: rotate(0deg);
-    animation-timing-function: cubic-bezier(0, 0, 0.58, 1);
-  }
-  10% {
-    transform: rotate(113.750887deg);
-  }
-  23.333333% {
-    transform: rotate(113.750887deg);
-  }
-  33.333333% {
-    transform: rotate(0deg);
+  46.666667% {
+    transform: translate(-381.496258px, 372.462756px);
   }
   100% {
-    transform: rotate(0deg);
+    transform: translate(-381.496258px, 372.462756px);
   }
 }
 #loader-animation-svg #pan-o2_to {
@@ -837,45 +719,25 @@ header img {
 }
 @keyframes pan-o2_to__to {
   0% {
-    transform: translate(511.40007px, 757.750031px);
-    animation-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    transform: translate(490.866554px, 420.184132px);
   }
   10% {
-    transform: translate(270.589538px, 429.143148px);
+    transform: translate(-266.244492px, 446.71065px);
+  }
+  16.666667% {
+    transform: translate(-448.614306px, 464.394996px);
   }
   23.333333% {
-    transform: translate(440.0867px, 1081.159568px);
+    transform: translate(-373.455837px, -91.777673px);
   }
-  33.333333% {
-    transform: translate(619.403376px, 1025.699801px);
-    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  30% {
+    transform: translate(-324.547569px, -331.980823px);
   }
-  43.333333% {
-    transform: translate(620.66627px, 928.430646px);
-  }
-  100% {
-    transform: translate(620.66627px, 928.430646px);
-  }
-}
-#loader-animation-svg #pan-o2_tr {
-  animation: pan-o2_tr__tr 2500ms linear 1 normal forwards;
-}
-@keyframes pan-o2_tr__tr {
-  0% {
-    transform: rotate(0deg);
-    animation-timing-function: cubic-bezier(0, 0, 0.58, 1);
-  }
-  10% {
-    transform: rotate(46.826056deg);
-  }
-  23.333333% {
-    transform: rotate(46.826056deg);
-  }
-  33.333333% {
-    transform: rotate(0deg);
+  46.666667% {
+    transform: translate(-332.560788px, 384.262805px);
   }
   100% {
-    transform: rotate(0deg);
+    transform: translate(-332.560788px, 384.262805px);
   }
 }
 #loader-animation-svg #pan-o3_to {
@@ -883,45 +745,25 @@ header img {
 }
 @keyframes pan-o3_to__to {
   0% {
-    transform: translate(581.500031px, 757.750031px);
-    animation-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    transform: translate(560.966515px, 420.184132px);
   }
   10% {
-    transform: translate(251.934838px, 484.112889px);
+    transform: translate(-196.144531px, 436.763206px);
+  }
+  16.666667% {
+    transform: translate(-378.514345px, 447.815922px);
   }
   23.333333% {
-    transform: translate(383.733392px, 1030.990971px);
+    transform: translate(-303.355876px, -51.766841px);
   }
-  33.333333% {
-    transform: translate(690.605178px, 1025.699801px);
-    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  30% {
+    transform: translate(-257.210787px, -286.183105px);
   }
-  43.333333% {
-    transform: translate(690.482163px, 928.430645px);
-  }
-  100% {
-    transform: translate(690.482163px, 928.430645px);
-  }
-}
-#loader-animation-svg #pan-o3_tr {
-  animation: pan-o3_tr__tr 2500ms linear 1 normal forwards;
-}
-@keyframes pan-o3_tr__tr {
-  0% {
-    transform: rotate(0deg);
-    animation-timing-function: cubic-bezier(0, 0, 0.58, 1);
-  }
-  10% {
-    transform: rotate(-63.866141deg);
-  }
-  23.333333% {
-    transform: rotate(46.051103deg);
-  }
-  33.333333% {
-    transform: rotate(0deg);
+  46.666667% {
+    transform: translate(-262.460827px, 384.262805px);
   }
   100% {
-    transform: rotate(0deg);
+    transform: translate(-262.460827px, 384.262805px);
   }
 }
 #loader-animation-svg #pan-d_to {
@@ -929,45 +771,25 @@ header img {
 }
 @keyframes pan-d_to__to {
   0% {
-    transform: translate(654.949951px, 746.150085px);
-    animation-timing-function: cubic-bezier(0, 0, 0.58, 1);
+    transform: translate(634.416435px, 408.584186px);
   }
   10% {
-    transform: translate(358.706817px, 435.453585px);
+    transform: translate(-119.378796px, 423.505353px);
+  }
+  16.666667% {
+    transform: translate(-299.538067px, 433.452797px);
   }
   23.333333% {
-    transform: translate(521.708639px, 1110.883958px);
+    transform: translate(-224.821707px, -38.277122px);
   }
-  33.333333% {
-    transform: translate(761.993759px, 1017.563032px);
-    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  30% {
+    transform: translate(-176.316073px, -249.005047px);
   }
-  43.333333% {
-    transform: translate(762.602138px, 917.30489px);
-  }
-  100% {
-    transform: translate(762.602138px, 917.30489px);
-  }
-}
-#loader-animation-svg #pan-d_tr {
-  animation: pan-d_tr__tr 2500ms linear 1 normal forwards;
-}
-@keyframes pan-d_tr__tr {
-  0% {
-    transform: rotate(0deg);
-    animation-timing-function: cubic-bezier(0, 0, 0.58, 1);
-  }
-  10% {
-    transform: rotate(-127.29105deg);
-  }
-  23.333333% {
-    transform: rotate(-127.29105deg);
-  }
-  33.333333% {
-    transform: rotate(0deg);
+  46.666667% {
+    transform: translate(-189.010907px, 372.662859px);
   }
   100% {
-    transform: rotate(0deg);
+    transform: translate(-189.010907px, 372.662859px);
   }
 }
 #loader-animation-svg #pan-waiter_x5f_2_to {
@@ -977,14 +799,14 @@ header img {
   0% {
     transform: translate(-95.095183px, 111.418471px);
   }
-  73.333333% {
+  80% {
     transform: translate(-95.095183px, 111.418471px);
   }
-  83.333333% {
-    transform: translate(28.615017px, 276.165488px);
+  90% {
+    transform: translate(41.315668px, 285.535056px);
   }
   100% {
-    transform: translate(28.615017px, 276.165488px);
+    transform: translate(41.315668px, 285.535056px);
   }
 }
 #loader-animation-svg #pan-waiter_x5f_2_tr {
@@ -994,14 +816,14 @@ header img {
   0% {
     transform: rotate(-50.33081deg);
   }
-  73.333333% {
+  80% {
     transform: rotate(-50.33081deg);
   }
-  83.333333% {
-    transform: rotate(0.3406deg);
+  90% {
+    transform: rotate(0deg);
   }
   100% {
-    transform: rotate(0.3406deg);
+    transform: rotate(0deg);
   }
 }
 #loader-animation-svg #pan-waiter_x5f_1_to {
@@ -1009,46 +831,16 @@ header img {
 }
 @keyframes pan-waiter_x5f_1_to__to {
   0% {
-    transform: translate(-175.902841px, 298.62336px);
+    transform: translate(-170.614962px, 463.51896px);
   }
-  16.666667% {
-    transform: translate(-175.902841px, 298.62336px);
+  40% {
+    transform: translate(-170.614962px, 463.51896px);
   }
-  23.333333% {
-    transform: translate(-3.338419px, 358.196662px);
-  }
-  33.333333% {
-    transform: translate(180.992273px, 402.379708px);
-    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
-  }
-  43.333333% {
-    transform: translate(179.838427px, 367.70454px);
-  }
-  83.333333% {
-    transform: translate(179.838427px, 367.70454px);
+  46.666667% {
+    transform: translate(194.62814px, 376.036528px);
   }
   100% {
-    transform: translate(179.838427px, 367.70454px);
-  }
-}
-#loader-animation-svg #pan-waiter_x5f_1_tr {
-  animation: pan-waiter_x5f_1_tr__tr 2500ms linear 1 normal forwards;
-}
-@keyframes pan-waiter_x5f_1_tr__tr {
-  0% {
-    transform: rotate(47.20319deg);
-  }
-  16.666667% {
-    transform: rotate(47.20319deg);
-  }
-  23.333333% {
-    transform: rotate(35.626231deg);
-  }
-  33.333333% {
-    transform: rotate(0.290603deg);
-  }
-  100% {
-    transform: rotate(0.290603deg);
+    transform: translate(194.62814px, 376.036528px);
   }
 }
 #loader-animation-svg #pan-chef_to {
@@ -1056,17 +848,20 @@ header img {
 }
 @keyframes pan-chef_to__to {
   0% {
-    transform: translate(731.093643px, 233.622006px);
+    transform: translate(614.930291px, 295.467356px);
     animation-timing-function: cubic-bezier(0, 0, 0.58, 1);
   }
-  6.666667% {
-    transform: translate(341.694319px, 238.839895px);
+  16.666667% {
+    transform: translate(269.930291px, 295.467356px);
+  }
+  23.333333% {
+    transform: translate(269.930291px, 295.467356px);
   }
   33.333333% {
-    transform: translate(730.720077px, 232.088577px);
+    transform: translate(619.930291px, 295.467356px);
   }
   100% {
-    transform: translate(730.720077px, 232.088577px);
+    transform: translate(619.930291px, 295.467356px);
   }
 }
 #loader-animation-svg #pan-chef_tr {
@@ -1074,17 +869,21 @@ header img {
 }
 @keyframes pan-chef_tr__tr {
   0% {
+    transform: rotate(0deg);
+    animation-timing-function: cubic-bezier(0, 0, 0.58, 1);
+  }
+  16.666667% {
     transform: rotate(-10.030608deg);
     animation-timing-function: cubic-bezier(0, 0, 0.58, 1);
   }
-  6.666667% {
-    transform: rotate(14.972249deg);
+  23.333333% {
+    transform: rotate(17.729447deg);
   }
   33.333333% {
-    transform: rotate(-19.16554deg);
+    transform: rotate(0deg);
   }
   100% {
-    transform: rotate(-19.16554deg);
+    transform: rotate(0deg);
   }
 }
 
@@ -1200,6 +999,7 @@ header img {
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.12);
   overflow: hidden;
   opacity: 0;
+  max-width: 600px;
 }
 
 .menu-item:hover .menu-item__check {

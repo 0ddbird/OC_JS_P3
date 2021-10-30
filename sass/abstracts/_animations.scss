@@ -1,4 +1,5 @@
 @mixin animation-slideUp {
+
     
     @for $i from 1 through 5 {
         & .menu-item:nth-child(#{$i}n) {
