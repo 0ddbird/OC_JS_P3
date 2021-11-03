@@ -51,13 +51,15 @@
 }
 
 #restaurants {
+    h2 {
+        width: 100%;
+        margin-bottom: 1em;
+    }
     background-color: a.$clr-grey1;
     padding: 1em;
     padding-top: 2em;
     padding-bottom: 4em;
-    h2 {
-        width: 100%;
-    }
+    
     @include a.flex-center($wrap:wrap);
     gap: 1em 1em;
 }

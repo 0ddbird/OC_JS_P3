@@ -216,6 +216,7 @@ a:active, a:hover, a:link, a:visited {
 }
 #restaurants h2 {
   width: 100%;
+  margin-bottom: 1em;
 }
 
 @media screen and (min-width: 800px) {
