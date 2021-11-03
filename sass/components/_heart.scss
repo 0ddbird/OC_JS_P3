@@ -20,7 +20,10 @@
     position: absolute;
     top: 0;
     left: calc(50% - 0.5em);
-    color: a.$clr-secondary;
+    background-image: linear-gradient(a.$clr-primary, 10%, a.$clr-secondary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
     opacity: 0;
 
 }
