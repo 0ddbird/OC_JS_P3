@@ -3,19 +3,33 @@
 ## <a id="i">Index</a>
 
 [1 - Contexte](#1)
+
 [2 - Mettre en place son environnement Front-End](#2)
+
 [2.1 - Environnement Front-End](#2.1)
+
 [2.1.1 - Sass](#2.1.1)
+
 [2.1.2 - Git](#2.1.2)
+
 [3 - Présentation du site sur Github Pages](#3)
+
 [4 - Animations](#4)
+
 [4.1 - Animation 1 : Boutons](#4.1)
+
 [4.2 - Animation 2 : Coeur](#4.2)
+
 [4.3 - Animation 3 : entrée progressive des cartes](#4.4)
+
 [4.4 - Animation 4 : Bloc vert + checkmark](#4.4)
+
 [4.5 - Animation 5 : Loader](#4.5)
+
 [5 - Points d'amélioration](#5)
+
 [6 - Q&A](#6)
+
 [7 - Débrief](#7)
 
 Pour gagner du temps, les points suivants seront partagés à l'écran :
