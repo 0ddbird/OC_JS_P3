@@ -68,24 +68,26 @@ Utilisés :
 
 Méthode suggérée par mon mentor (pour un projet solo).
 
->**MASTER** Version mobile statique [1 commit amendé]
->|
->|----- **Branche 1** : Feat_heart_animation [1 commit amendé]
->|
->|----- **Branche 2** : Feat_menu_animation [1 commit amendé]
->|
->|----- **Branche 3** : Feat_checkmark_animation [1 commit amendé]
->|
->|----- **Branche 4** : Feat_loader_animation [1 commit amendé]
-
+<pre>
+MASTER Version mobile statique [1 commit amendé]
+|
+|----- Branche 1 : Feat_heart_animation [1 commit amendé]
+|
+|----- Branche 2 : Feat_menu_animation [1 commit amendé]
+|
+|----- Branche 3 : Feat_checkmark_animation [1 commit amendé]
+|
+|----- Branche 4 : Feat_loader_animation [1 commit amendé]
+</pre>
 Rebase des 4 branches sur *master* à la fin du projet.
 
 **Structure réelle :**
-
-> **MASTER** [24 commits]
->|
->|----- **Branche 1** : feat_desktop-version [31 commits]
->(1er commit de la branche = dernier commit de master)
+<pre>
+MASTER [24 commits]
+|
+|----- Branche 1 : feat_desktop-version [31 commits]
+</pre>
+(1er commit de la branche = dernier commit de master)
 
 [Retour à l'index](#i)
 ___
