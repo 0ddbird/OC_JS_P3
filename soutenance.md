@@ -110,8 +110,8 @@ ___
 ### <a id="4.1">4.1 - Animation 1 : Boutons</a>
 
 **Points d'intérêt :**
-Pas de `background-image: linear-gradient()` mais une `box-shadow: inset` avec transition
-Un pseudo élément à opacité 0 -> 1 avec 2nde `box-shadow` pour éviter le calcul de 2 transitions sur `box-shadow`.
+Pas de `background-image: linear-gradient()` mais une `box-shadow: inset` avec transition.  
+Un pseudo élément à opacité 0 -> 1 avec 2nde `box-shadow` pour éviter le calcul de 2 transitions sur `box-shadow`.  
 Référence[^1]
 
 **Extraits de code :**
@@ -164,7 +164,7 @@ Référence[^1]
 **Points d'intérêt :**
 
 - Une seule icône dans le HTML
-- Une icone en CSS car n'a pas de sens dans l'HTML
+- Une icône en CSS car n'a pas de sens dans l'HTML
 - Une animation en keyframes
 
 **Extraits de code :**
@@ -239,9 +239,9 @@ Référence[^1]
 
 **Points d'intérêt :**
 
-- Animation appliquée sur un élément parent
-- Boucle for pour faciliter le maintien / l'évolution de la page peu importe le nombre d'éléments
-- Incrément du délai d'animation selon la position *n* de l'élément
+- Animation appliquée sur l'**élément parent**
+- Boucle `for` pour faciliter le maintien / l'évolution de la page si le nombre d'éléments change.
+- Incrément du délai d'animation selon la position *n* de l'élément (*n1*: .25s, *n2*: .5s, *n3*: .75s,...)
 
 **Extraits de code :**
 
@@ -502,6 +502,7 @@ Réponse :
 > Ca dépend de l'entreprise
 
 -> Pas obligatoire mais il est nécessaire de la connaître pour s'adapter à l'équipe.
+
 [Retour à l'index](#i)
 
 ## Références
